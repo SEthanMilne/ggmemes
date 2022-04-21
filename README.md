@@ -58,7 +58,7 @@ devtools::install_github("SEthanMilne/ggmemes")
 
 # Citation
 
-I'm sure this will be used in many peer-reviewed publications. To that end, the citation for `Haikuify` can be found below:
+I'm sure this will be used in many peer-reviewed publications. To that end, the citation for `ggmemes` can be found below:
 
 ```{r}
 To cite package ‘ggmemes’ in publications use:
