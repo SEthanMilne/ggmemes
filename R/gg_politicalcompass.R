@@ -1,9 +1,6 @@
 #' Title
 #'
 #' @param data A dataframe
-#' @param x The x-axis variable
-#' @param y The y-axis variable
-#' @param size Optional size aesthetic variable
 #' @param scale Scale of plot. Default is -1 to 1
 #' @param top Top title
 #' @param bottom Bottom title
@@ -17,16 +14,13 @@
 #'
 gg_politicalcompass <-
   function(data,
-           x,
-           y,
-           size = 1,
            scale = 1,
            top = "Authoritarian",
            bottom = "Libertarian",
            left = "Left",
            right = "Right"
   ) {
-    ggplot(data, aes(x = x, y = y, size = size)) +
+    ggplot(data) +
       scale_x_continuous(limits = c(-1.2*scale, 1.2*scale)) +
       scale_y_continuous(limits = c(-1.2*scale, 1.2*scale)) +
       theme(
@@ -142,7 +136,5 @@ gg_politicalcompass <-
         x = (-1.15*scale),
         size = 6,
         angle = 90
-      ) +
-      geom_point()
+      )
   }
-

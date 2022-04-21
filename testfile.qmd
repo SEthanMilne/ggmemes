@@ -154,16 +154,13 @@ ggplot(data, aes(x = x, y = y, size = value)) +
 ```{r}
 gg_politicalcompass <-
   function(data,
-           x,
-           y,
-           size = 1,
            scale = 1,
            top = "Authoritarian",
            bottom = "Libertarian",
            left = "Left",
            right = "Right"
   ) {
-    ggplot(data, aes(x = x, y = y, size = size)) +
+    ggplot(data) +
   scale_x_continuous(limits = c(-1.2*scale, 1.2*scale)) +
   scale_y_continuous(limits = c(-1.2*scale, 1.2*scale)) +
   theme(
@@ -279,8 +276,7 @@ gg_politicalcompass <-
     x = (-1.15*scale),
     size = 6,
     angle = 90
-  ) +
-  geom_point()
+  )
   }
 ```
 
@@ -288,8 +284,11 @@ gg_politicalcompass <-
 
 
 ```{r}
-gg_politicalcompass(data = data, 
-                    x = x, 
-                    y = y)
+gg_politicalcompass(data = data) +
+  geom_point(aes(x = x,
+                 y = y,
+                 size = value))
+
+ggsave(filename = here::here("images", "example_plot.png"))
 ```
 
