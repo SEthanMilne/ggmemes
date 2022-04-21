@@ -1,4 +1,9 @@
 # Introduction to `ggmemes`
+Automated art for the 21st century
+
+**Author**: Ethan Milne, PhD Student (Marketing/Consumer Behavior), Ivey Business School
+
+**Purpose**: Personal amusement
 
 ---
  
