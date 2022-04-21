@@ -30,6 +30,19 @@ gg_politicalcompass(data = data) +
 This results in the following output:
 ![example_output](images/example_plot.png)
 
+Labels can be changed with the optional parameters "top", "bottom", "left", and "right" within the function call. For example:
+
+```
+gg_politicalcompass(data = data,
+                    top = "good",
+                    bottom = "evil",
+                    left = "chaotic",
+                    right = "lawful"
+                    )
+ 
+```
+
+
 ---
 
 # Installation
