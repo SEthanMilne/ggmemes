@@ -1,4 +1,6 @@
 # Introduction to `ggmemes`
+
+---
  
 # Political Compass Format
 
@@ -22,3 +24,37 @@ gg_politicalcompass(data = data) +
 
 This results in the following output:
 ![example_output](images/example_plot.png)
+
+---
+
+# Installation
+
+You can install `ggmemes` with the following code:
+
+```{r}
+install.packages("devtools") # if you have not installed "devtools" package
+devtools::install_github("SEthanMilne/ggmemes")
+```
+
+---
+
+# Citation
+
+I'm sure this will be used in many peer-reviewed publications. To that end, the citation for `Haikuify` can be found below:
+
+```{r}
+To cite package ‘ggmemes’ in publications use:
+
+  Ethan Milne (2022). ggmemes. R package version
+  0.1.0.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {ggmemes},
+    author = {Ethan Milne},
+    year = {2022},
+    note = {R package version 0.1.0},
+  }
+
+```
